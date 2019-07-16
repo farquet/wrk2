@@ -67,9 +67,13 @@
   100 HTTP connections open, and a constant throughput of 2000 requests
   per second (total, across all connections combined).
 
-  [It's important to note that wrk2 extends the initial calibration
+  NOTE : this fork of wrk2 reverts ta a short calibration period from
+  the 10 seconds that have been set in giltene/wrk2 to allow for very short
+  executions of wrk.
+
+  ~~[It's important to note that wrk2 extends the initial calibration
    period to 10 seconds (from wrk's 0.5 second), so runs shorter than
-   10-20 seconds may not present useful information]
+   10-20 seconds may not present useful information]~~
 
   Output:
 
